@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: blanchedalmond;
+}
+img{
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    animation: anm 1s infinite ease-in-out;
+}
+.container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height: -webkit-fill-available;
+    background-color:cornsilk;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+.hearts{
+    transform-origin: center;
+}
+h1{
+    font-size: 5rem;
+    transform: scale(1.5,2.1);
+    position: relative;
+    padding-left: 2rem;
+}
+p{
+    position: absolute;
+    margin-top: 20rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-family: 'Calligraffitti', cursive;
+}
+span{
+    color: red;
+}
+@keyframes anm {
+    0%{
+       transform:scale(1);
+    }
+    50%{
+        transform:scale(.5);
+
+    }
+    100%{
+        transform:scale(1);
+ 
+    }
+}
